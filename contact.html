@@ -79,7 +79,7 @@ button[type="submit"]:hover {
     </div>
     </header>
     <main>
-        <form action="https://formspree.io/f/mwpkjblg" method="post">
+        <form id="contact-form" action="https://formspree.io/f/mwpkjblg" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -88,6 +88,30 @@ button[type="submit"]:hover {
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
         </form>
+
+        <script>
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+      
+              const formData = new FormData(this);
+              fetch('https://formspree.io/f/mwpkjblg', {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                      'Accept': 'application/json'
+                  }
+              }).then(response => {
+                  if (response.ok) {
+                      window.location.href = 'thank-you.html'; // Replace with your thank you page URL
+                  } else {
+                      alert('There was a problem with your submission.');
+                  }
+              }).catch(error => {
+                  console.error('Error:', error);
+                  alert('There was a problem with your submission.');
+              });
+          });
+      </script>
         <div id = "social-links-div" style="text-align: center;">
             <ul id="social-links" style="list-style: none; display: inline-flex;">
                 <li><a href="https://github.com/kimviiii" target="_blank" class="icon" style="padding-left: 10px;">
