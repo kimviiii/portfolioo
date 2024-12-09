@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        .menu-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+        }
+
+        h1 {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-div">
+            <h1>Kalana Kivindu</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section id="hero" class="bg">
+            <h2>Welcome to my portfolio</h2>
+            <div style="display: flex; align-items: flex-start;">
+                <img src="../static/pfp.jpg" alt="Kalana" style="height: 150px; width: auto; margin-right: 20px; border-radius: 20px;">
+                <div>
+                    Hi, I'm Kalana, a Computer Science undergraduate with a passion for creating websites and web applications. I thrive on tackling new challenges and enjoy working on innovative projects that push the boundaries of creativity and functionality.
+                    <br>
+                    <button class="link-button">
+                        <a class="link arrow-link" href="about-me.html">About me</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="about-summary">
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating websites and web applications. I have experience with HTML, CSS, JavaScript, PHP, and MySQL. I am always looking for new projects to work on. Feel free to contact me if you have any questions or if you would like to work with me.</p>
+        </section> -->
+        <section id="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <h3>Property8 - Real Esate Website</h3>
+                <p>Property8 is a project designed to facilitate property listings and searches, built primarily using PHP and Hack. It provides a user-friendly interface for browsing and managing real estate properties, featuring CSS and HTML for a responsive and visually appealing design.</p>
+            </div>
+            <div class="project">
+                <h3>Plant Guardian - A Web Dashboard for IoT-based Drip Irrigation Systems</h3>
+                <p>Designed for Sri Lanka's green thumbs, this intelligent plant watering system leverages sensor-driven technology to ensure your plants receive the optimal amount of water. With an easy-to-use interface built using HTML, JavaScript, CSS, and Python, Plant Guardian provides real-time monitoring and control, making plant care simpler and more efficien</p>
+            </div>
+            <!-- <div class="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero nec odio ultricies tincidunt. Nullam nec nunc nec nunc.</p>
+            </div> -->
+        </section>
+        <div id="skills-summary" class="bg-2">
+            <h2>Skills</h2>
+            <ul class="skill-items">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div id="contact-summary" style="margin-top: 32px; margin-bottom: 32px;" class="bg">
+            <h2>Get in Touch</h2>
+            <p>I'm always looking for opportunities to learn, grow, and contribute. If you have any questions or a project in mind, feel free to reach out—I’d love to collaborate!</p>
+            <button class="link-button"><a class="link arrow-link" href="contact.php">Contact</a></button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kalana Kivindu</p>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: white;
+    color: rgb(42, 141, 173);
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header .menu-div nav#menu ul li a {
+    color: rgb(42, 141, 173);
+    text-decoration: none;
+}
+
+header .menu-div nav#menu ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(42, 141, 173);
+    transition: 500ms;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+#hero {
+    background-color: #f4f4f4;
+    padding: 2em;
+    text-align: left;
+}
+
+#about-summary {
+    padding: 2em;
+    text-align: left;
+}
+
+#featured-projects {
+    padding: 2em;
+    text-align: left;
+}
+
+.project {
+    background-color: #f4f4f4;
+    margin: 1em;
+    padding: 1em;
+}
+
+#skills-summary {
+    background-color: #f4f4f4;
+    padding: 2em;
+    text-align: left;
+}
+
+#contact-summary {
+    background-color: #f4f4f4;
+    padding: 2em;
+    text-align: left;
+}
+
+.pr {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.pr:active, .pr::after {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.pr:hover {
+    text-decoration: none;
+    /* border-bottom: 2px solid skyblue; */
+    transition: 0.5s;
+}
+
+footer {
+    /* background-color: rgb(42, 141, 173);
+    color: white; */
+    color: rgb(42, 141, 173);
+    background-color: white;
+    text-align: left;
+    padding: 1em 0;
+    border-top: 1px solid rgb(42, 141, 173);
+}
+
+footer p {
+    margin-left: 10px;
+}
+
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+.bg, .bg-2 {
+    position: relative; /* To position pseudo-element */
+    color: #000; /* Content text color */
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    z-index: 1; /* Ensures content is on top */
+}
+
+/* .bg {
+    background-size: cover;
+    position: relative; 
+}*/
+  
+.bg::before, .bg-2::before {
+content: "";
+background-image: url('bg.jpg');
+background-size: cover; /* Ensure it covers the entire area */
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0.04; /* Set the desired opacity */
+z-index: -1;
+}
+
+.bg-2::before {
+    background-image: url('bg2.jpg');
+}
+
+.arrow-link {
+    padding: 8px 5px;
+    display: block; 
+    align-items: center; 
+    text-decoration: none;
+    color: lightblue;
+  }
+  
+  .arrow-link::after {
+    text-decoration: none;
+    content: '>'; 
+    font-size: 16px; /* You can adjust this later */
+    margin-left: 5px; 
+    color: lightblue; /* Subtle blue color */
+  }
+
+  .arrow-link:hover {
+    display: block;
+    color: white;
+  }
+
+  .arrow-link:hover::after {
+    color: white;
+  }
+
+  .link-button {
+    margin-top: 15px;
+    /* padding: 5px; */
+    border: 1px solid lightblue;
+    border-radius: 10px;
+  }
+
+    .link-button:hover {
+        border: 1px solid white;
+        background-color: lightblue;
+        color: white;
+        transition: 0.5s;
+    }
+
+.skill-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-items li::before {
+    content: '🚀 ';
+    margin-right: 10px;
+}
+
+.skill-items2 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-items2 li::before {
+    content: '💻 ';
+    margin-right: 10px;
+}
+
+.skill-items3 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-items3 li::before {
+    content: '🙆‍♂️ ';
+    margin-right: 10px;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+h1 {
+    display: inline;
+}

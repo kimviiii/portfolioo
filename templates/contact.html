@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Basic form container styling */
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Textarea styling */
+textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: rgb(42, 141, 173); /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+button[type="submit"]:hover {
+  background-color: rgb(24, 85, 106); /* Darker green on hover */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-div">
+            <h1>Get in Touch</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/mwpkjblg" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id = "social-links-div" style="text-align: center;">
+            <ul id="social-links" style="list-style: none; display: inline-flex;">
+                <li><a href="https://github.com/kimviiii" target="_blank" class="icon" style="padding-left: 10px;">
+                    <i class="fab fa-github"></i>
+                  </a></li>
+                <li><a href="https://www.instagram.com/kimviiiiiii?igsh=MTd2OXBuZWN3NHR0ZA==" target="_blank" class="icon" style="padding-left: 10px;">
+                    <i class="fab fa-instagram"></i>
+                  </a></li>
+                <li><a href="https://www.hackerrank.com/profile/kalanakivindu22" target="_blank" class="icon" style="padding-left: 10px;">
+                    <i class="fas fa-code"></i>
+                  </a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kalana Kivindu</p>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>
